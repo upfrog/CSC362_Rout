@@ -4,8 +4,10 @@ Stephen Rout
 This script creats a databse of movie ratings, then populates it with content. Afterwards, a new, better-designed databse is created.
 */
 
+#To prevent issues with re-running the code
 DROP DATABASE IF EXISTS movie_ratings;
 
+#create and begin to use the new database
 CREATE DATABASE movie_ratings;
 USE movie_ratings;
 
@@ -119,6 +121,9 @@ CREATE TABLE ratings
     PRIMARY KEY (MovieID, ConsumerID)                   #We assume that any given reviewer will only review a given film once, so the combination of the consumer and film IDs will uniquely identify a given review
 );
 
+/*
+This table will contain a list of valid genres, such as "Action"
+*/
 CREATE TABLE genres
 (
     GenreID     INT unsigned NOT NULL AUTO_INCREMENT,   #Unique identifier for a given genre
@@ -168,6 +173,9 @@ VALUES  (1, 1, '2010-09-02 10:54:19', 4),
         (2, 3, '2017-03-27 00:12:48', 2),
         (2, 4, '2018-08-02 00:54:42', 4);
 
+/*
+A set of 1 to N film-genre pairs describes the set of genres for a given film.
+*/
 INSERT INTO film_genres (MovieID, GenreID)
 VALUES  (1,1),
         (1,2),
