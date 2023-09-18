@@ -74,7 +74,7 @@ FROM movies
 
 
 /*
-The genres field of the movies table is a multi-valued field. I propose to solve this by creating two new 
+The genres field of the movies table is a multi-part field. I propose to solve this by creating two new 
 tables; one table will contain a list of possible genre names, and their associate IDs, and the other table
 will be a list of movie-genre relationships, each relationship being a seperate entry.
 */

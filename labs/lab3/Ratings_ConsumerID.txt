@@ -2,25 +2,25 @@ FIELD SPECIFICATIONS
 
 GENERAL ELEMENTS
 
-Field Name:           _ 
-Parent Table:         _ 
-Alias(es):            _ 
+Field Name:           ConsumerID 
+Parent Table:         ratings
+Alias(es):            N/A
 Specification Type:
   Unique:  _ 
   Generic: _ 
-  Replica: _ 
-Source Specification: _ 
-Shared By:            _ 
-Description:          _ 
+  Replica: X 
+Source Specification: consumers 
+Shared By:            consumers 
+Description:          The unique ID for a given consumer.
 
 
 PHYSICAL ELEMENTS
 
-Data Type:            _ 
-Length:               _ 
-Decimal Places:       _  
+Data Type:            INT 
+Length:               N/A 
+Decimal Places:       9=0  
 Character Support:
-  Letters (A-Z):      _ 
+  Letters (A-Z):      X 
   Numbers (0-9):      _ 
   Keyboard (.,/$#%):  _ 
   Special (©®™Σπ):    _ 
@@ -28,31 +28,31 @@ Character Support:
 
 LOGICAL ELEMENTS
 
-Key Type:      Non:        _ 
+Key Type:      Non:         
                Primary:    _ 
-               Foreign:    _ 
+               Foreign:    X 
                Alternate:  _ 
 
-Key Structure: Simple:     _ 
+Key Structure: Simple:     X 
                Composite:  _ 
 
 Uniqueness:    Non-unique: _ 
-               Unique:     _ 
+               Unique:     X 
 
 Null Support:  Nulls OK:   _ 
-               No nulls:   _ 
+               No nulls:   X 
 
-Values Entered By: User:   _ 
-                   System: _ 
+Values Entered By: User:   _
+                   System: X 
 
 Required Value:    No:     _ 
-                   Yes:    _ 
+                   Yes:    X 
 
 Range of Values:   _ 
 
 Edit Rule:
   Enter now, edits allowed:       _ 
-  Enter now, edits not allowed:   _ 
+  Enter now, edits not allowed:   X 
   Enter later, edits allowed:     _ 
   Enter later, edits not allowed: _ 
   Not determined at this time:    _ 
