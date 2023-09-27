@@ -1,0 +1,54 @@
+BUSINESS RULE SPECIFICATIONS
+
+RULE INFORMATION
+
+Statement:  A carpet that has been loaned to a customer cannot be returned before it was originally loaned out. 
+
+Constraint: ActualCarpetReturnDate must be later than TrialPeriodStartDate
+
+Type:     Database Oriented:     X 
+          Application Oriented   _ 
+
+Category: Field Specific:        X 
+          Relationship Specific: _ 
+
+Test On:  Insert:                _ 
+          Delete:                _ 
+          Update:                X
+
+
+STRUCTURES AFFECTED
+
+Field Names: TrialPeriodStartDate, ActualCarpetReturnDate 
+
+Table Names: CarpetTrials
+
+
+FIELD ELEMENTS AFFECTED
+
+Physical Elements: Data Type:           DATE
+                   Length:              _ 
+                   Character Support:   _ 
+
+Logical Elements:  Key Type:            _ 
+                   Key Structure:       _ 
+                   Uniqueness:          N 
+                   Null Support:        Y 
+                   Values Entered By:   _ 
+                   Range of Values:     _ 
+                   Edit Rule:           _ 
+
+
+RELATIONSHIP CHARACTERISTICS AFFECTED
+
+    Deletion rule:              _
+    Type of participation:      _
+    Degree of participation:    _
+
+    
+ACTION TAKEN
+
+_ 
+
+
+NOTES: _
