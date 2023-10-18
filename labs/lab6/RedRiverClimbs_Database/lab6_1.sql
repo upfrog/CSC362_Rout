@@ -1,1 +1,0 @@
-SELECT climb_name FROM climbs;
