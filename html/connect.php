@@ -5,15 +5,17 @@
 ?>
 
 <?php
-    $dbhost = 'localhost';
-    $dbuser = 'srr';
-    $dbpass = 'h$lbaip2';
+    $config = parse_ini_file('/home/upfrog42/CSC362_Rout/html/mysql.ini');
+    $dbname = 'instrument_rentals';            
 ?>
 
 
 
 <?php
-    $conn = new mysqli($dbhost, $dbuser, $dbpass);
+    $conn = new mysqli(
+                $config['mysqli.default_host'],
+                $config['mysqli.default_user'],
+                $config['mysqli.default_pw']);
     if ($conn->connect_errno) {
         echo "Error: Failed to make a MySQL connection, here is why: ". "<br>";
         echo "Errno: ". $conn->connect_errno . "\n";

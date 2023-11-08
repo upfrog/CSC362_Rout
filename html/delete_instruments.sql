@@ -1,0 +1,3 @@
+SET FOREIGN_KEY_CHECKS = FALSE; 
+DELETE FROM instruments WHERE instrument_id = (?);
+SET FOREIGN_KEY_CHECKS = TRUE;
